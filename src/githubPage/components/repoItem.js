@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 export class RepoItem extends Component {
-    constructor(props){
-        super(props);
-    }
 
     repoList = (repoArr) => {
         return (

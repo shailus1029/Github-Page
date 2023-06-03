@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import RepoListContainer from './githubPage/containers/repoListContainer'
+import RepoListContainer from './containers/repoListContainer'
 
 const Routes = () => {
     return (

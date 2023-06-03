@@ -1,8 +1,7 @@
 import React from 'react';
-import _ from 'lodash';
-import { Profile } from '../components/profile';
-import { RepoItem } from '../components/repoItem';
-import { SearchBar } from '../components/searchBar';
+import Profile from './Profile';
+import RepoItem from './RepoItem';
+import SearchBar from './SearchBar.jsx';
 
 const RepoListView = (props) => {
     const {
@@ -33,7 +32,6 @@ const RepoListView = (props) => {
                     >Search User Repository</button>
                 </div>
             </div>
-
             <div className="profile">
                 <Profile profileData={repo.profile} />
             </div>

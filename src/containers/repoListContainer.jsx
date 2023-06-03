@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux';
-import * as RepoActions from '../action/repoAction';
+import * as RepoActions from '../redux/repoAction';
 import RepoListView from '../components/repoListView';
-import { handleTypeFilter } from '../../utils';
+import { handleTypeFilter } from '../utils';
 
 export class RepoListContainer extends Component {
     constructor(props) {

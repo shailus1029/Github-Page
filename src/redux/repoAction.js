@@ -1,6 +1,5 @@
 
-import { RepoApi } from "../../api/repoApi.js";
-
+import { RepoApi } from "../api/repoApi.js";
 
 export const GET_REPOLIST = 'GET_REPOLIST';
 export const GET_REPOLIST_SUCCESS  = 'GET_REPOLIST_SUCCESS';

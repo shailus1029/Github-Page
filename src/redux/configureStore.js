@@ -8,7 +8,7 @@ import thunkMiddleware from 'redux-thunk'
 import { createLogger } from 'redux-logger'
 
 // Import the root reducer
-import rootReducer from '../reducers/rootReducer'
+import rootReducer from './rootReducer'
 
 
 // Create the redux logging middleware 

@@ -1,4 +1,4 @@
-import axios from 'axios' 
+import axios from 'axios'
 
 const post = (url = '', data = '', config = {}) => {
     return axios.post(url, data, config)
@@ -23,4 +23,4 @@ const HttpClient = {
     delete: del
 }
 
-export {HttpClient}
+export { HttpClient }

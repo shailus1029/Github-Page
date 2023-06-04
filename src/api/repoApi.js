@@ -1,4 +1,4 @@
-import {HttpClient} from './httpClient' 
+import { HttpClient } from './httpClient'
 
 const API = 'https://api.github.com/users';
 
@@ -16,6 +16,6 @@ const getProfile = (username) => {
 }
 
 
-const RepoApi = {getRepoList, getProfile}
+const RepoApi = { getRepoList, getProfile }
 
-export {RepoApi}
+export { RepoApi }

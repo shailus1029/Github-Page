@@ -12,12 +12,12 @@ const Profile = (props) => {
                 className="profile-img"
                 src={profileData.avatar_url}
             />
-            <h1>{profileData.name}</h1>
-            <h3>{profileData.login}</h3>
-            <div className="profile-role">{profileData.bio}</div>
+            <h1 className="color">{profileData.name}</h1>
+            <h3 className="color">{profileData.login}</h3>
+            <div className="profile-role color">{profileData.bio}</div>
             <hr />
-            <div className="profile-corporation">{profileData.company}</div>
-            <div className="profile-country">{profileData.location}</div>
+            <div className="profile-corporation color">{profileData.company}</div>
+            <div className="profile-country color">{profileData.location}</div>
             <a href='https://github.com/'>Sign in to view email</a>
         </div>
     );

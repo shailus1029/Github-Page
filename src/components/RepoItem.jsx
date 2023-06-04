@@ -22,7 +22,7 @@ const RepoItem = (props) => {
                         )
                     })}
                 </div> :
-                <div className="no-item">No repos to show</div>
+                <div className="no-item bg">No repos to show</div>
             }
         </div>
     )

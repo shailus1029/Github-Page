@@ -60,16 +60,17 @@ const SearchBar = (props) => {
     }
 
     return (
-        <div>
+        <div className='searchConatainer'>
             <input
                 type="text"
                 value={text}
-                className="search-input"
+                className="search-input bg"
                 onChange={handleInputChange}
                 placeholder="Find a repository..."
             />
-            <div className="dropBtn">
+            <div className="dropBtn buttonBg">
                 <button
+                    className="buttonBg"
                     onClick={() => handleButtonClick("filterDropdown")}
                 >
                     Type: <b>{filter}</b>
@@ -78,6 +79,7 @@ const SearchBar = (props) => {
             </div>
             <div className="dropBtn">
                 <button
+                    className="buttonBg"
                     onClick={() => handleButtonClick("languageDropdown")}
                 >
                     Language: <b>{language}</b>

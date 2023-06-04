@@ -1,0 +1,36 @@
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexOne {
+    flex: 1;
+}
+
+.flexQuater {
+    flex: 0.25;
+}
+
+.flex3rdQuater {
+    flex: 0.75;
+}
+
+.mLR0 {
+    margin: 0 10%;
+}
+
+.bg {
+    color: #c5c6c7;
+    background-color: #161b22
+}
+
+.buttonBg {
+    color: #c7d1d9;
+    background-color: #20262d;
+}
+
+.color {
+    color: #e6edf3;
+}

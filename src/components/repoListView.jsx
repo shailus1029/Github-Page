@@ -17,11 +17,11 @@ const RepoListView = (props) => {
     return (
         <div>
             {repo.message && <span className="error-msg">{repo.message}</span>}
-            <div className="search-div">
+            <div className="searchContainer mLR0">
                 <input
                     type="text"
                     value={text}
-                    className="main-input"
+                    className="main-input bg"
                     onChange={handleSearchUser}
                     placeholder="Enter User to Find repository..."
                 />
@@ -32,17 +32,19 @@ const RepoListView = (props) => {
                     >Search User Repository</button>
                 </div>
             </div>
-            <div className="profile">
-                <Profile profileData={repo.profile} />
-            </div>
-            <div className="search-list-div">
-                <div className="search-bar">
-                    <SearchBar
-                        dropdownSelect={handleFilter}
-                        inputChange={handleChangeInput} />
+            <div className="flexContainer mLR0">
+                <div className="profile flexQuater">
+                    <Profile profileData={repo.profile} />
                 </div>
-                <div className="repo-list">
-                    <RepoItem repoList={repoList} />
+                <div className="search-list-div flex3rdQuater">
+                    <div className="search-bar">
+                        <SearchBar
+                            dropdownSelect={handleFilter}
+                            inputChange={handleChangeInput} />
+                    </div>
+                    <div className="repo-list">
+                        <RepoItem repoList={repoList} />
+                    </div>
                 </div>
             </div>
         </div>
